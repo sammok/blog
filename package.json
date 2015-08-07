@@ -1,0 +1,30 @@
+{
+  "name": "Blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sam mok",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "compression": "*",
+    "ejs": "*",
+    "express": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "morgan": "*",
+
+
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-string-replace": "*"
+  }
+}
