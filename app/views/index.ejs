@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="blog">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=375,maximum-scale=1.3,user-scalable=no,minimal-ui"/>
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title></title>
+
+    <!-- injector:css -->
+    <link rel="stylesheet/less" href="/assets/stylesheets/bootstrap.css"/>
+    <link rel="stylesheet/less" href="/assets/stylesheets/main.less"/>
+    <link rel="stylesheet/less" href="/assets/stylesheets/components.less"/>
+    <link rel="stylesheet/less" href="/assets/stylesheets/index.less"/>
+    <!-- endinjector -->
+</head>
+<body>
+<!-- blog header -->
+<div ui-view="header"></div>
+<!-- end blog header -->
+
+<!-- blog body -->
+<div ui-view="body"></div>
+<!-- end blog body -->
+
+<!-- blog footer -->
+<div ui-view="footer"></div>
+<!-- end blog footer -->
+
+<!-- injector:js -->
+<!-- page -->
+<script src="//localhost:35729/livereload.js"></script>
+<script src="/lib/angular/angular.min.js"></script>
+<script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/application.js"></script>
+<script src="/common/header/header.js"></script>
+<script src="/common/footer/footer.js"></script>
+<script src="/articles/articles.js"></script>
+<script src="/articles/articles.js"></script>
+<script src="/articles/detail/articles.detail.js"></script>
+<script src="/articles/create/articles.create.js"></script>
+
+<!-- less compiler -->
+<script src="/lib/less/dist/less.js"></script>
+<!-- endinjector -->
+</body>
+</html>

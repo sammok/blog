@@ -117,7 +117,7 @@ module.exports = function (grunt){
                 }
             },
             html: {
-                files: [ rootPath + '/*.html', rootPath + '/**/*.html', rootPath + '/**/**/*.html', rootPath + '/**/**/**/*.html'],
+                files: [ rootPath + '/*.html', rootPath + '/**/*.html', rootPath + '/**/**/*.html', rootPath + '/**/**/**/*.html', 'app/views/*'],
                 options: {
                     livereload: true
                 }
