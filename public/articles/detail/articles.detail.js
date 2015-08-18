@@ -16,6 +16,19 @@ angular.module('articles.detail', [
             });
     }])
 
-    .controller('ArticlesDetailController', [function () {
+    .controller('ArticlesDetailController', ['Utils', '$stateParams', 'Articles', function (Utils, $stateParams, Articles) {
         var articlesDetailCtrl = this;
+
+        articlesDetailCtrl.article = {
+            title: '',
+            date: '',
+            content: ''
+        };
+
+        Articles.getArticleById($stateParams.articleId)
+            .then(function (result) {
+                articlesDetailCtrl.article.title = result.title;
+                articlesDetailCtrl.article.date = Utils.formatDate(result.created);
+                articlesDetailCtrl.article.content = result.content;
+            });
     }]);

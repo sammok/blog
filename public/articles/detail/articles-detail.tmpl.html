@@ -1,31 +1,24 @@
 <div class="blog-body container">
     <div class="row">
-        <main class="main col-md-8">
+        <!-- main -->
+        <main class="main col-md-9">
             <!-- post detail -->
             <div class="post-detail">
                 <div class="post-detail-hd">
-                    <h1 class="title">人生若只如初见, 你还是那么爱吃番茄酱</h1>
-                    <p class="date">Publish Date: 2015/08/07 19:41pm</p>
+                    <h1 class="title">{{articlesDetailCtrl.article.title}}</h1>
+                    <p class="date">Publish Date: {{articlesDetailCtrl.article.date}}</p>
                 </div>
                 <div class="post-detail-bd">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque ducimus recusandae ullam. Accusamus architecto asperiores consectetur, delectus exercitationem ipsa maxime minima molestiae nam necessitatibus, nihil praesentium, similique sint temporibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto minus molestias, nobis numquam odio officia sapiente totam unde. Animi autem cumque doloremque eos et eum ipsa nihil repellat tempore!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab asperiores cum dicta dolore doloremque eaque id inventore labore molestias odio omnis pariatur perspiciatis, quos repudiandae rerum sapiente veritatis vero?</p>
-                    <div>
-                        <img src="http://www.lauramcalister.com/wp-content/uploads/2015/07/534806-cat.jpg" alt=""/>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque eaque iusto, libero necessitatibus quidem veritatis voluptas! Dicta est nemo odit optio praesentium repellendus rerum. Ex exercitationem praesentium quaerat voluptate.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores aut commodi deleniti fuga fugiat inventore ipsam itaque nam, optio quidem quis rerum tenetur voluptas voluptatum. Nam nemo saepe suscipit!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi cupiditate dignissimos modi officia, provident qui similique tenetur voluptas voluptate. A dolor eos iusto nemo nihil possimus provident, saepe similique!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores at blanditiis delectus expedita incidunt maiores minima molestiae nobis nostrum pariatur placeat praesentium quasi quod repellat, rerum sed voluptate. Similique?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum natus nihil? Aliquam atque dolorum labore obcaecati, quam rem repellendus voluptas voluptatem! Ab accusantium debitis exercitationem illum iure quibusdam temporibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad beatae dicta dolore doloremque enim esse et exercitationem fugit illo in itaque iure iusto nostrum odit, officiis quibusdam rerum voluptatum?</p>
+                    {{articlesDetailCtrl.article.content}}
                 </div>
                 <div class="post-detail-ft"></div>
             </div>
             <!-- end post detail -->
         </main>
-        <aside class="side col-md-3 col-md-push-1">
+        <!-- end main -->
+
+        <!-- sidebar -->
+        <aside class="side col-md-3">
             <div class="panel panel-default sidebar-articleCategory">
                 <div class="panel-heading">文章分类</div>
                 <div class="panel-body">
@@ -44,5 +37,6 @@
                 </div>
             </div>
         </aside>
+        <!-- sidebar -->
     </div>
 </div>

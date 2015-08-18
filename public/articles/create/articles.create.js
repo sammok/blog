@@ -9,18 +9,34 @@ angular.module('articles.create', [
             .state('blog.articles.create', {
                 url: 'articles/create',
                 views: {
-                    'header@': {
-                    },
                     'body@': {
                         controller: 'ArticlesCreateController as articlesCreateCtrl',
                         templateUrl: '/articles/create/articles-create.tmpl.html'
-                    },
-                    'footer@': {
                     }
                 }
             });
     }])
 
-    .controller('ArticlesCreateController', [function () {
+    .controller('ArticlesCreateController', ['$http', 'Articles', function ($http, Articles) {
         var articlesCreateCtrl = this;
+
+        articlesCreateCtrl.title = '';
+        articlesCreateCtrl.content = '';
+
+        /** create article */
+        articlesCreateCtrl.createArticle = function () {
+            var article = {
+                title: articlesCreateCtrl.title,
+                content: articlesCreateCtrl.content
+            };
+
+            Articles.createArticle(article);
+            clearArticleForm();
+        };
+
+        //  clear article form
+        function clearArticleForm () {
+            articlesCreateCtrl.title = '';
+            articlesCreateCtrl.content = '';
+        }
     }]);

@@ -27,6 +27,7 @@ module.exports = function () {
 
     //  loading routes
     require('../app/routes/index.server.routes.js')(app);
+    require('../app/routes/articles.server.routes.js')(app);
 
     return app;
 };
